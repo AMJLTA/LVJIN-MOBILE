@@ -8,6 +8,8 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
+    "description": "LVJIN ROBOTICS SO101 机械臂的官方配套应用 —— 实时监控关节状态、远程遥控、采集模仿学习数据。",
+    "primaryColor": "#7c5cff",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -15,7 +17,12 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "tech.greenjin.mobile"
+      "bundleIdentifier": "tech.greenjin.mobile",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSLocalNetworkUsageDescription": "需要访问本地网络以连接同一 Wi-Fi 下的 SO101 机械臂。"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -23,8 +30,10 @@
         "backgroundColor": "#0d1117"
       },
       "package": "tech.greenjin.mobile",
+      "versionCode": 1,
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["android.permission.CAMERA", "android.permission.INTERNET"]
     },
     "web": {
       "favicon": "./assets/favicon.png",
